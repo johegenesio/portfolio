@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --cor-preta: #202020;
-    --cor-azul: #BCD6FF;
-    --cor-select: #A1C6FF;
+    --bg-color: #fff;
+    --primary-color: #BCD6FF;
+    --txt-color: #202020;
+    --border-color: #202020;
+    --second-color: #A1C6FF;
+    --select-color: #65a3ff;
+}
+
+[data-theme = "dark"] {
+    --bg-color: #303030;
+    --primary-color: #FCE157;
+    --txt-color: #fefefe;
+    --border-color: #fefefe;
+    --second-color: #FFF5C2;
+    --select-color: #FCE157;
 }
 
 .material-symbols-outlined {
@@ -66,6 +78,8 @@ table {
 html {
     padding: 16px;
     cursor: url('assets/icon/cursor.png'), auto;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 button, a {
@@ -78,12 +92,15 @@ img.imgs {
 
 body {
     margin: 0 auto;
-    border: 2px solid var(--cor-preta);
+    border: 2px solid var(--border-color);
     border-radius: 16px;
     box-shadow: 0px 0px 8px rgba(32, 32, 32, 0.25);
     font-family: 'Poppins', sans-serif;
-    color: var(--cor-preta);
+    color: var(--txt-color);
     max-width: 1280px;
+
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 div.header {
@@ -92,7 +109,7 @@ div.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid var(--cor-preta);
+    border-bottom: 2px solid var(--border-color);
 }
 
 h1.header_title {
@@ -108,14 +125,26 @@ div.header_with_btn {
 }
 
 button.btn_header {
-    background-color: var(--cor-azul);
+    background-color: var(--primary-color);
     border: none;
     height: 40px;
-    width: 40px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 8px;
+}
+
+button#btn_translate {
+    width: 96px;
+    gap: 8px;
+}
+
+p.language {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 nav.header_nav {
@@ -124,7 +153,7 @@ nav.header_nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid var(--cor-preta);
+    border-bottom: 2px solid var(--border-color);
 }
 
 ul.nav_list {
@@ -140,8 +169,12 @@ li.nav_type {
 }
 
 li.nav_type > a {
-    color: var(--cor-preta);
+    color: var(--txt-color);
     text-decoration: none;
+}
+
+li.nav_type > a:hover {
+    color: var(--select-color);
 }
 
 div.nav_btn {
@@ -152,7 +185,7 @@ div.nav_btn {
 }
 
 button.btn_nav {
-    background-color: var(--cor-azul);
+    background-color: var(--primary-color);
     border: none;
     height: 32px;
     width: 32px;
@@ -162,13 +195,17 @@ button.btn_nav {
     align-items: center;
 }
 
+button#btn_Aa {
+    pointer-events: none;
+}
+
 .btn_header:hover, .btn_nav:hover {
-    background-color: var(--cor-select);
+    background-color: var(--second-color);
     transition: all 0.2s ease;
 }
 
 section.sect_primary {
-    border-bottom: 2px solid var(--cor-preta);
+    border-bottom: 2px solid var(--border-color);
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
@@ -188,7 +225,7 @@ h2.title_primary {
 h2.title_primary_bold {
     font-size: 40px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 52px;
 }
 
 div.txt-animation span {
@@ -197,19 +234,19 @@ div.txt-animation span {
 
 div.txt-animation span::before {
     content: "";
-    color: var(--cor-preta);
+    color: var(--txt-color);
     animation: palavras 12s infinite;
 }
 
 div.txt-animation span::after {
     content: "";
     position: absolute;
-    height: 88%;
-    border-left: 2px solid var(--cor-preta);
+    height: 96%;
+    border-left: 2px solid var(--primary-color);
     right: -10px;
     animation: cursor .5s infinite, digita 20s steps(20) infinite;
     width: calc(100% + 10px);
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 @keyframes digita {
@@ -223,19 +260,19 @@ div.txt-animation span::after {
 
 @keyframes cursor {
     0% {
-        border-left: 2px solid var(--cor-preta);
+        border-left: 2px solid var(--border-color);
     }
 }
 
 @keyframes palavras {
     0%, 33% {
-        content: "desenvolvedor web";
+        content: "developer web";
     }
     34%, 66% {
         content: "designer UX/UI";
     }
     67%, 100% {
-        content: "desenvolvedor app";
+        content: "developer app";
     }
 }
 
@@ -249,12 +286,12 @@ div.div_primary_image {
 div.rect_blue {
     width: 132px;
     height: 280px;
-    background-color: var(--cor-azul);
+    background-color: var(--primary-color);
     border-radius: 16px;
 }
 
 section.sect_about {
-    border-bottom: 2px solid var(--cor-preta);
+    border-bottom: 2px solid var(--border-color);
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
@@ -294,15 +331,22 @@ div.div_social {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--cor-azul);
+    background-color: var(--primary-color);
     padding: 16px;
     border-radius: 16px;
     width: 30%;
     height: 262px;
 }
 
+a.a_social {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section.sect_tec {
-    border-bottom: 2px solid var(--cor-preta);
+    border-bottom: 2px solid var(--border-color);
     padding: 40px 20px;
     display: flex;
     justify-content: center;
@@ -333,10 +377,11 @@ div.skills {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
 
 section.sect_project {
-    border-bottom: 2px solid var(--cor-preta);
+    border-bottom: 2px solid var(--border-color);
     padding: 40px 20px;
     display: flex;
     justify-content: center;
@@ -358,7 +403,7 @@ article.art_project {
 div.rect_project {
     width: 100%;
     height: 280px;
-    background-color: var(--cor-azul);
+    background-color: var(--primary-color);
     border-radius: 16px;
 }
 
@@ -376,7 +421,7 @@ h4.title_footer {
 }
 
 button.btn_footer {
-    background-color: var(--cor-azul);
+    background-color: var(--primary-color);
     border: none;
     border-radius: 50px;
     display: flex;
