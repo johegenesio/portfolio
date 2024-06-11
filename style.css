@@ -10,7 +10,7 @@
 }
 
 [data-theme = "dark"] {
-    --bg-color: #303030;
+    --bg-color: #202020;
     --primary-color: #FCE157;
     --txt-color: #fefefe;
     --border-color: #fefefe;
@@ -177,29 +177,7 @@ li.nav_type > a:hover {
     color: var(--select-color);
 }
 
-div.nav_btn {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-}
-
-button.btn_nav {
-    background-color: var(--primary-color);
-    border: none;
-    height: 32px;
-    width: 32px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button#btn_Aa {
-    pointer-events: none;
-}
-
-.btn_header:hover, .btn_nav:hover {
+.btn_header:hover {
     background-color: var(--second-color);
     transition: all 0.2s ease;
 }
