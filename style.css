@@ -17,15 +17,6 @@
     --txt-black: 40px;
 }
 
-[data-theme = "dark"] {
-    --bg-color: #202020;
-    --primary-color: #FCE157;
-    --txt-color: #fefefe;
-    --border-color: #fefefe;
-    --second-color: #FFF5C2;
-    --select-color: #FCE157;
-}
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -88,6 +79,7 @@ html {
     cursor: url('assets/icon/cursor.png'), auto;
     background-color: var(--bg-color);
     transition: background-color 0.3s, color 0.3s;
+    scroll-behavior: smooth;
 }
 
 button, a {
