@@ -60,3 +60,8 @@ a.a_social {
 a.a_social:any-link {
     color: var(--txt-color);
 }
+
+img.img_social {
+    width: 80px;
+    height: auto;
+}
