@@ -1,0 +1,21 @@
+@import url('base/reset.css');
+@import url('base/variables.css');
+
+@import url('layout/footer.css');
+@import url('layout/global.css');
+@import url('layout/header.css');
+@import url('layout/sect-about.css');
+@import url('layout/sect-primary.css');
+@import url('layout/sect-project.css');
+@import url('layout/sect-habilidades.css');
+
+@import url('module/btn.css');
+@import url('module/icon.css');
+
+@import url('responsive/footer.css');
+@import url('responsive/global.css');
+@import url('responsive/header.css');
+@import url('responsive/sect-about.css');
+@import url('responsive/sect-primary.css');
+@import url('responsive/sect-project.css');
+@import url('responsive/sect-habilidades.css');

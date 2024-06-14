@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --primary-color: #BCD6FF;
+    --txt-color: #202020;
+    --border-color: #202020;
+    --second-color: #A1C6FF;
+    --select-color: #5289db;
+
+    --txt-thin: 11px;
+    --txt-small: 14px;
+    --txt-regular: 16px;
+    --txt-medium: 20px;
+    --txt-semibold: 24px;
+    --txt-bold: 28px;
+    --txt-black: 40px;
+}

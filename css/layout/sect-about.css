@@ -1,0 +1,62 @@
+section.sect_about {
+    border-bottom: 2px solid var(--border-color);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+article.art_about_me {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 50%;
+}
+
+h3.title_about {
+    font-size: var(--txt-bold);
+    font-weight: 600;
+    line-height: normal;
+}
+
+p.p_about {
+    font-size: var(--txt-regular);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+article.art_social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    width: 50%;
+}
+
+a.div_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 16px;
+    width: 30%;
+    height: 262px;
+}
+
+#linkedin-text {
+    text-align: center;
+}
+
+a.a_social {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.a_social:any-link {
+    color: var(--txt-color);
+}

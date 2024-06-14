@@ -1,0 +1,16 @@
+footer.footer {
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4.title_footer {
+    font-size: var(--txt-regular);
+    font-weight: 600;
+    line-height: normal;
+}
+
+a.contato {
+    text-decoration: none;
+}
