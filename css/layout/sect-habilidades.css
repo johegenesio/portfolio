@@ -7,6 +7,12 @@ section.sect_habilidades {
     gap: 20px;
 }
 
+div.skill_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 h3.title_habilidades {
     font-size: var(--txt-bold);
     font-weight: 600;
