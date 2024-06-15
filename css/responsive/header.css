@@ -49,7 +49,6 @@ li.nav_type {
 
 li.nav_type > a {
     color: var(--txt-color);
-    text-decoration: none;
 }
 
 li.nav_type > a:hover {

@@ -25,3 +25,11 @@ body {
 
     background-color: var(--bg-color);
 }
+
+a {
+    text-decoration: none;
+}
+
+a:any-link {
+    color: var(--txt-color);
+}

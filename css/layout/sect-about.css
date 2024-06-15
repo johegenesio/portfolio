@@ -55,7 +55,6 @@ a.div_social {
 
 
 a.a_social {
-    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,12 +64,12 @@ a.div_social_row {
     background-color: var(--primary-color);
     padding: 16px;
     border-radius: 16px;
-    text-decoration: none;
     display: flex;
     align-items: center;
     color: var(--txt-color);
     height: 123px;
     width: 100%;
+    justify-content: center;
 }
 
 div.social_two {
@@ -83,10 +82,6 @@ div.social_two {
 a.div_social:hover, a.div_social_row:hover {
     background-color: var(--second-color);
     transition: all 0.2s ease;
-}
-
-a.a_social:any-link {
-    color: var(--txt-color);
 }
 
 img.img_social {
