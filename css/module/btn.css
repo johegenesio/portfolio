@@ -25,11 +25,6 @@ button#btn_aA {
     pointer-events: none;
 }
 
-.btn_header:hover, .btn_nav:hover {
-    background-color: var(--second-color);
-    transition: all 0.2s ease;
-}
-
 button.btn_footer {
     background-color: var(--primary-color);
     border: none;
@@ -44,4 +39,10 @@ button.btn_footer {
     font-size: var(--txt-small);
     font-weight: 500;
     line-height: normal;
+}
+
+
+.btn_header:hover, .btn_nav:hover, .btn_footer:hover {
+    background-color: var(--second-color);
+    transition: all 0.2s ease;
 }

@@ -46,6 +46,11 @@ a.div_social {
     height: 262px;
 }
 
+a.div_social:hover {
+    background-color: var(--second-color);
+    transition: all 0.2s ease;
+}
+
 #linkedin-text {
     text-align: center;
 }
