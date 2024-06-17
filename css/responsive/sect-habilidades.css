@@ -18,19 +18,29 @@ div.skills {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    flex-basis: 144px;
+    gap: 16px;
+    flex-basis: 110px;
+}
+
+img.img_habilidades {
+    width: 80px;
+}
+
+@media (max-width: 1080px) {
+    div.skills {
+        flex-basis: 170px;
+    }
 }
 
 @media (max-width: 940px) {
     div.skills {
-        flex-basis: 240px;
+        flex-basis: 224px;
     }
 }
 
 @media (max-width: 800px) {
     div.skills {
-        flex-basis: 200px;
+        flex-basis: 170px;
     }
 }
 
@@ -38,15 +48,8 @@ div.skills {
     section.sect_habilidades {
         padding: 24px 20px;
     }
-    div.div_skill {
-        gap: 16px;
-    }
-    img.img_habilidades {
-        width: 88px;
-        height: auto;
-    }
     div.skills {
-        flex-basis: 144px;
+        flex-basis: 136px;
     }
 }
 
@@ -59,5 +62,14 @@ div.skills {
 @media (max-width: 380px) {
     div.div_skill {
         justify-content: space-around;
-    } 
+    }
+    div.skills {
+        flex-basis: 72px;
+    }
+    img.img_habilidades {
+        width: 64px;
+    }
+    div.skills > p.p_about {
+        font-size: var(--txt-small);
+    }
 }
