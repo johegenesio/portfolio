@@ -30,6 +30,9 @@
     div.skills {
         flex-basis: 96px;
     }
+    img.img_habilidades {
+        width: 64px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -38,9 +41,6 @@
     }
     div.skills {
         flex-basis: 72px;
-    }
-    img.img_habilidades {
-        width: 64px;
     }
     div.skills > p.p_about {
         font-size: var(--txt-small);
