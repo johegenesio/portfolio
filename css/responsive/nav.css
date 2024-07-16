@@ -1,0 +1,17 @@
+@media (max-width: 560px) {
+    nav {
+        justify-content: center;
+    }
+    .div-acessibility {
+        display: none;
+    }
+    #navigations {
+        gap: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 328px) {
+    #navigations {
+        gap: var(--spacing-lg);
+    }
+}

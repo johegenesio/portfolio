@@ -1,20 +1,15 @@
-footer.footer {
-    padding: 20px;
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--spacing-lg);
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    text-align: center;
 }
 
-h4.title_footer {
-    font-size: var(--txt-regular);
-    font-weight: 600;
-    line-height: normal;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     footer {
-        gap: 16px;
-        flex-direction: column;
-        text-align: center;
+        justify-content: center;
     }
 }

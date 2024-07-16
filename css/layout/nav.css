@@ -1,0 +1,21 @@
+nav {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-none) var(--spacing-lg);
+    border-bottom: var(--border-size) solid var(--border-color);
+}
+
+#navigations {
+    display: flex;
+    gap: var(--spacing-2xl);
+}
+
+.link-page {
+    padding: var(--spacing-none);
+}
+
+.link-page:hover {
+    color: var(--text-color-active);
+}

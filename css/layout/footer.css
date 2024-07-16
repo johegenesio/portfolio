@@ -1,12 +1,7 @@
-footer.footer {
-    padding:20px;
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-h4.title_footer {
-    font-size: var(--txt-regular);
-    font-weight: 600;
-    line-height: normal;
+    padding: var(--spacing-lg);
+    text-align: center;
 }

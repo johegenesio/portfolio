@@ -1,37 +1,57 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let initialFontSize = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--txt-regular'));
-    let currentFontSize = initialFontSize;
-    const minFontSize = initialFontSize;
-    const maxFontSize = initialFontSize * 1.2;
+// Obtém o valor de uma variável CSS
+function getCSSVariable(variable) {
+    return parseFloat(getComputedStyle(document.documentElement).getPropertyValue(variable));
+}
 
-    function aumentar() {
+// Define o valor de uma variável CSS
+function setCSSVariable(variable, value) {
+    document.documentElement.style.setProperty(variable, `${value}px`);
+}
+
+// Calcula o tamanho máximo com base no tamanho original
+function calculateMaxFontSize(originalSize) {
+    return originalSize * 1.15;
+}
+
+const variables = ['--h1', '--h2', '--h3', '--h4', '--pf', '--label'];
+
+// Armazenar os tamanhos originais para garantir que possamos comparar corretamente
+let originalFontSizes = {};
+
+variables.forEach(variable => {
+    originalFontSizes[variable] = getCSSVariable(variable);
+});
+
+// Função para aumentar a fonte
+function aumentar() {
+    variables.forEach(variable => {
+        let originalFontSize = originalFontSizes[variable]; // Tamanho original
+        let maxFontSize = calculateMaxFontSize(originalFontSize);
+        let currentFontSize = getCSSVariable(variable);
         if (currentFontSize < maxFontSize) {
-            currentFontSize *= 1.1;
-            if (currentFontSize > maxFontSize) {
-                currentFontSize = maxFontSize;
-            }
-            ajustarFonte();
+            setCSSVariable(variable, currentFontSize + 2);  // Aumenta em 2 pixels
         }
-    }
+    });
+}
 
-    function diminuir() {
-        if (currentFontSize > minFontSize) {
-            currentFontSize *= 0.9;
-            if (currentFontSize < minFontSize) {
-                currentFontSize = minFontSize;
-            }
-            ajustarFonte();
+// Função para diminuir a fonte
+function diminuir() {
+    variables.forEach(variable => {
+        let originalFontSize = originalFontSizes[variable]; // Tamanho original
+        let currentFontSize = getCSSVariable(variable);
+        if (currentFontSize > originalFontSize) {
+            setCSSVariable(variable, currentFontSize - 2);  // Diminui em 2 pixels
         }
-    }
+    });
+}
 
-    function ajustarFonte() {
-        document.documentElement.style.setProperty('--txt-regular', `${currentFontSize}px`);
-        document.documentElement.style.setProperty('--txt-medium', `${currentFontSize * 1.25}px`);
-        document.documentElement.style.setProperty('--txt-semibold', `${currentFontSize * 1.5}px`);
-        document.documentElement.style.setProperty('--txt-bold', `${currentFontSize * 1.75}px`);
-        document.documentElement.style.setProperty('--txt-black', `${currentFontSize * 2.5}px`);
-    }
+// Vincular as funções aos botões
+document.getElementById('btn-increase-font').addEventListener('click', function(event) {
+    event.preventDefault();  // Previne a ação padrão do link
+    aumentar();
+});
 
-    document.querySelector('.btn_nav[onclick="aumentar()"]').addEventListener('click', aumentar);
-    document.querySelector('.btn_nav[onclick="diminuir()"]').addEventListener('click', diminuir);
+document.getElementById('btn-decrease-font').addEventListener('click', function(event) {
+    event.preventDefault();  // Previne a ação padrão do link
+    diminuir();
 });

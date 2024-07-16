@@ -1,47 +1,88 @@
-button.btn_header {
-    background-color: var(--primary-color);
+button {
+    background-color: var(--background-button-default);
     border: none;
-    height: 40px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-    width: 96px;
+    border-radius: var(--radius-100);
+    padding: var(--spacing-none);
 }
 
-button.btn_nav {
-    background-color: var(--primary-color);
+button:hover {
+    background-color: var(--background-button-active);
+}
+
+a {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-x-s);
+    color: var(--text-color-button-default);
+    padding: var(--spacing-xs) var(--spacing-md);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color-button-active);
+}
+
+.button-outline {
+    background-color: var(--background-button-outline);
+    border: var(--border-size-button-outline) solid var(--border-color-button-outline);
+    border-radius: var(--radius-100);
+    padding: var(--spacing-none);
+}
+
+.button-outline:hover {
+    background-color: var(--background-button-outline-active);
+}
+
+.a-outline {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--text-color-button-outline);
+    padding: var(--spacing-x-s) var(--spacing-md);
+    text-decoration: none;
+}
+
+.a-outline:hover {
+    color: var(--text-color-button-outline-active);
+}
+
+.custom-dropdown-button {
+    background-color: var(--background-button-default);
     border: none;
-    border-radius: 50px;
-    height: 32px;
-    width: 32px;
+    border-radius: var(--radius-100);
+    color: var(--text-color-button-default);
+    padding: var(--spacing-xs) var(--spacing-md);
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: var(--spacing-xs);
 }
 
-button#btn_aA {
-    pointer-events: none;
+.custom-dropdown-button:hover {
+    background-color: var(--background-button-active);
 }
 
-button.btn_footer {
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 50px;
+.custom-dropdown-menu {
+    min-width: 120px;
+    width: auto;
+    text-align: center;
+    border-radius: var(--radius-md);
+    border: var(--border-size) solid var(--border-color);
+    padding: var(--spacing-xs);
+}
+
+.custom-dropdown-item {
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    padding: 10px 20px;
-
-    font-family: 'Poppins', sans-serif;
-    font-size: var(--txt-small);
-    font-weight: 500;
-    line-height: normal;
+    gap: var(--spacing-xs);
 }
 
-.btn_header:hover, .btn_nav:hover, .btn_footer:hover {
-    background-color: var(--second-color);
-    transition: all 0.2s ease;
+.custom-dropdown-item:hover {
+    background-color: var(--background-button-default);
+    border-radius: var(--radius-xs);
+    transition: all .2s ease-in-out;
+}
+
+.custom-dropdown-button.active {
+    background-color: var(--background-button-outline);
+    border: var(--border-size) solid var(--border-color);
 }

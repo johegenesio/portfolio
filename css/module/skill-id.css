@@ -1,0 +1,33 @@
+#html:focus,
+#css:focus,
+#js:focus,
+#ts:focus,
+#py:focus,
+#flutter:focus,
+#dart:focus,
+#angular:focus,
+#wp:focus,
+#bootstrap:focus,
+#canva:focus,
+#figma:focus,
+#scrum:focus,
+#dt:focus {
+    border: var(--border-size) solid var(--border-color);
+}
+
+#html:focus>a,
+#css:focus>a,
+#js:focus>a,
+#ts:focus>a,
+#py:focus>a,
+#flutter:focus>a,
+#dart:focus>a,
+#angular:focus>a,
+#wp:focus>a,
+#bootstrap:focus>a,
+#canva:focus>a,
+#figma:focus>a,
+#scrum:focus>a,
+#dt:focus>a {
+    padding: var(--spacing-x-s) calc(var(--spacing-md) - 2px);
+}

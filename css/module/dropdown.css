@@ -1,0 +1,33 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: var(--background-secundary);
+    border-radius: var(--radius-md);
+    /* border: var(--border-size) solid var(--border-color); */
+}
+
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+.dropdown-options > p {
+    padding: var(--spacing-xs) 25px;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.dropdown-options p:hover {
+    background-color: var(--blue-active);
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--blue-active);
+}

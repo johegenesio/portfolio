@@ -1,171 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="js/font.js" defer></script>
     <script src="js/language.js" defer></script>
-    <script src="js/modal.js" defer></script>
-    <title>João Genesio - Developer and Designer</title>
+    <script src="js/font.js" defer></script>
+    <title>João Genesio | Developer and Designer</title>
 </head>
-
 <body>
     <header>
-        <div class="header">
-            <h1 class="header_title">johegenesio</h1>
-            <div class="header_with_btn">
-                <button class="btn_header" id="btn_translate">
-                    <span class="material-symbols-outlined">
-                        translate
-                    </span>
-                    <p class="language" id="language-text">pt-br</p>
-                </button>
-            </div>
+        <div id="header">
+            <h1 class="H4-Semibold">johegenesio</h1>  
+            <button id="btn_translate"><a class="Label"><img src="assets/icon/translate.svg" alt=""><p class="language" id="language-text">PT-BR</p></a></button>
         </div>
-        <nav class="header_nav">
-            <div class="div_nav">
-                <ul class="nav_list">
-                    <li class="nav_type"><a href="#sobre" id="nav-about">Sobre mim</a></li>
-                    <li class="nav_type"><a href="#project" id="nav-projects">Projetos</a></li>
-                    <li class="nav_type"><a href="#habilidades" id="nav-habilidades">Habilidades</a></li>
-                </ul>
-            </div>
-            <div class="nav_btn">
-                <button class="btn_nav" onclick="aumentar()">
-                    <span class="material-symbols-outlined">
-                        add
-                    </span>
+        <nav>
+            <ul id="navigations">
+                <li><a href="#about-me" class="PF-Regular link-page" id="about">Sobre mim</a></li>
+                <li><a href="#premios" class="PF-Regular link-page" id="awards">Prêmios</a></li>
+                <li><a href="#projetos" class="PF-Regular link-page" id="projects">Projetos</a></li>
+            </ul>
+            <div class="div-acessibility">
+                <button class="btn-acessibility" id="btn-increase-font">
+                    <a href=""><img src="assets/icon/add.svg" alt=""></a>
                 </button>
-                <button class="btn_nav" id="btn_aA">
-                    <span class="material-symbols-outlined">
-                        match_case
-                    </span>
+                <button>
+                    <a href=""><img src="assets/icon/Aa.svg" alt=""></a>
                 </button>
-                <button class="btn_nav" onclick="diminuir()">
-                    <span class="material-symbols-outlined">
-                        remove
-                    </span>
+                <button class="btn-acessibility" id="btn-decrease-font">
+                    <a href=""><img src="assets/icon/remove.svg" alt=""></a>
                 </button>
             </div>
         </nav>
     </header>
     <main>
-        <section class="sect_primary">
-            <div class="div_primary_title">
-                <h2 class="title_primary" id="welcome-text">Olá, meu nome é João </h2>
-                <h2 class="title_primary_bold">
-                    <div class="txt-animation"><span></span></div>
-                </h2>
+        <section id="presentation">
+            <div>
+                <h1 class="H3-Regular" id="hiPresentation">Olá, meu nome é João</h1>
+                <h1 class="H1-Bold"><div class="txt-animation"><span></span></div></h1>
             </div>
-            <div class="div_primary_image">
-                <img class="imgs img_star" src="assets/icon/star.png" alt="">
-                <img class="imgs" id="img_perfil" src="assets/imgs/img_perfil.png" alt="">
-                <div class="rect_blue"></div>
+            <div class="div-assets-presentation">
+                <img src="assets/imgs/star.png" alt="">
+                <img class="img-perfil" src="assets/imgs/img_perfil.png" alt="">
+                <div class="rect-blue"></div>
             </div>
         </section>
-        <section class="sect_about" id="sobre">
-            <article class="art_about_me">
-                <h3 class="title_about" id="about-title">Sobre mim</h3>
-                <p class="p_about" id="about-text">Desenvolvedor de Sistemas e Designer UX/UI focado no futuro, com um
-                    histórico de iniciação em programação através da robótica e liderança como Cyber Leader na escola.
-                    Fiz cursos de lógica durante as férias para aprimorar minhas habilidades e, em 2023, estou cursando
-                    um curso técnico que me proporcionou aprendizado intensivo e interações práticas com softwares.
-                    Participei de diversos projetos em grupo e individuais, conquistando reconhecimento na área e
-                    competindo em eventos habilidadesnológicos. Entre em contato para saber como posso contribuir para o
-                    crescimento da sua empresa.</p>
+        <section id="about-me">
+            <article class="container-about-me">
+                <div class="title-description">
+                    <h2 class="H2-Semibold" id="partAbout">Sobre mim</h2>
+                    <p class="Label" id="subAbout">Me conheça</p>
+                </div>
+                <p class="PF-Regular" id="aboutMe">Olá, sou o João Genesio, tenho 18 anos e sou apaixonado por programação e design UX/UI. Concluí diversos cursos de lógica de programação e estou em um curso técnico intensivo. Participo de projetos reconhecidos e competições tecnológicas, buscando sempre novos desafios. Minha abordagem une criatividade e foco em soluções tecnológicas eficientes e centradas no usuário.</p>
+                <div class="div-btn">
+                    <button class="button-outline"><a href="https://github.com/johegenesio/" target="_blank" class="Label a-outline"><img src="assets/icon/github.svg" alt="">Github</a></button>
+                    <button class="button-outline"><a href="https://www.linkedin.com/in/joaogenesio/" target="_blank" class="Label a-outline"><img src="assets/icon/linkedin.svg" alt="">LinkedIn</a></button>
+                    <button class="button-outline"><a href="https://www.behance.net/johegenesio" target="_blank" class="Label a-outline"><img src="assets/icon/behance.svg" alt="">Behance</a></button>
+                </div>
             </article>
-            <article class="art_social">
-                <img class="imgs img_star" src="assets/icon/star.png" alt="">
-                <div class="container_social">
-                    <a href="https://github.com/johegenesio/" class="a_social div_social" target="_blank">
-                        <img class="imgs img_social" src="assets/imgs/GitHub.png" alt="">
-                        <p class="p_about" id="github-text">@johegenesio</p>
-                    </a>
-                    <div class="social_two">
-                        <a href="https://www.behance.net/johegenesio" class="div_social_row" target="_blank">
-                            <img class="imgs img_social" src="assets/imgs/Behance.png" alt="">
-                            <p class="p_about" id="github-text">João Genesio</p>
-                        </a>
-                        <a href="https://www.linkedin.com/in/joaogenesio/" class="div_social_row" target="_blank">
-                            <img class="imgs img_social" src="assets/imgs/LinkedIn.png" alt="">
-                            <p class="p_about" id="linkedin-text">João Genesio</p>
-                        </a>
+            <article class="container-about-me">
+                <div class="title-description">
+                    <h2 class="H2-Semibold" id="skills">Habilidades</h2>
+                    <p class="Label" id="subSkills">E vem mais...</p>
+                </div>
+                <div class="list-skill">
+                    <div class="div-btn">
+                        <button id="html"><a class="Label"><img src="assets/icon/html.svg" alt="">HTML5</a></button>
+                        <button id="css"><a class="Label"><img src="assets/icon/css.svg" alt="">CSS3</a></button>
+                        <button id="js"><a class="Label"><img src="assets/icon/js.svg" alt="">Javascript</a></button>
+                        <button id="ts"><a class="Label"><img src="assets/icon/ts.svg" alt="">Typescript</a></button>
+                        <button id="bootstrap"><a class="Label"><img src="assets/icon/bootstrap.svg" alt="">Bootstrap</a></button>
+                        <button id="flutter"><a class="Label"><img src="assets/icon/flutter.svg" alt="">Flutter</a></button>
+                        <button id="dart"><a class="Label"><img src="assets/icon/dart.svg" alt="">Dart</a></button>
+                        <button id="angular"><a class="Label"><img src="assets/icon/angular.svg" alt="">Angular</a></button>
+                        <button id="wp"><a class="Label"><img src="assets/icon/wordpress.svg" alt="">Wordpress</a></button>
+                        <button id="py"><a class="Label"><img src="assets/icon/py.svg" alt="">Python</a></button>
+                        <button id="canva"><a class="Label"><img src="assets/icon/canva.svg" alt="">Canva</a></button>
+                        <button id="figma"><a class="Label"><img src="assets/icon/figma.svg" alt="">Figma</a></button>
+                        <button id="scrum"><a class="Label"><img src="assets/icon/scrum.svg" alt="">SCRUM</a></button>
+                        <button id="dt"><a class="Label"><img src="assets/icon/design-thinking.svg" alt="">Design Thinking</a></button>
+                        <button id="dt"><a class="Label"><img src="assets/icon/office.svg" alt="">Office 365</a></button>
                     </div>
                 </div>
             </article>
         </section>
-        <section class="sect_project" id="project">
-            <h3 class="title_project" id="projects-title">Projetos</h3>
-            <article class="art_project">
-                <div class="rect_project">
-                    <!-- <img src="" alt="">
-                    <div class="info_project">
-                        <h4 class="projectTitle">Projeto re.star</h4>
-                        <p>Desenvolvido:</p>
-                        <p>Objetivo:</p>
-                    </div> -->
-                </div>
-                <div class="rect_project">
-                    <!-- <img src="" alt="">
-                    <div class="info_project">
-                        <h4 class="projectTitle">Projeto Biblioteca</h4>
-                        <p>Desenvolvido:</p>
-                        <p>Objetivo:</p>
-                    </div> -->
-                </div>
-                <div class="rect_project">
-                    <!-- <img src="" alt="">
-                    <div class="info_project">
-                        <h4 class="projectTitle">Projeto MatrizGame</h4>
-                        <p>Desenvolvido:</p>
-                        <p>Objetivo:</p>
-                    </div> -->
-                </div>
-            </article>
-        </section>
-        <section class="sect_habilidades" id="habilidades">
-            <div class="skill_title">
-                <h3 class="title_habilidades" id="habilidades-title">Habilidades</h3>
+        <section id="premios">
+            <div>
+                <h2 class="H2-Semibold" id="partAwards">Prêmios</h2>
+                <p class="Label" id="subAwards">Conheça meu empenho e colaboração</p>
             </div>
-            <div class="div_skill">
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/Html 5.png" alt="">
-                    <p class="p_about">HTML5</p>
+            <div class="container-premios">
+                <div class="container-info-premios">
+                    <h3 class="H4-Semibold">HP x SENAI</h3>
+                    <p class="PF-Medium" id="colocationHP">Colocação: 1°Lugar</p>
+                    <p class="PF-Regular desafio-text" id="challengeHP">Desafio: Mensurar a economia de carbono proporcionada pelo trabalho híbrido</p>
+                    <p class="PF-Regular" id="ideaHP">Ideia: HP Green</p>
+                    <button class="button-outline"><a href="https://www.figma.com/file/7L984YLV8csONHoqydTVjh/HP-Green" target="_blank" class="Label a-outline" id="viewHP"><img src="assets/icon/visibility.svg" alt="">Visualizar</a></button>
                 </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/CSS3.png" alt="">
-                    <p class="p_about">CSS3</p>
+                <img src="assets/imgs/star.png" alt="">
+                <div class="container-info-premios">
+                    <h3 class="H4-Semibold">SAE Brasil -JumpStart</h3>
+                    <p class="PF-Medium" id="colocationJS">Colocação: 2°Lugar</p>
+                    <p class="PF-Regular desafio-text" id="challengeJS">Desafio: Inteligência Artificial na Mobilidade, liderado pela empresa SCANIA</p>
+                    <p class="PF-Regular" id="ideaJS">Ideia: Projeto STK</p>
+                    <button class="button-outline"><a href="https://www.figma.com/board/7OgXIbs4JS6nKf62ohUyLA/SCANIA?node-id=0-1&t=66dHTaF2wAqeNVQP-1" target="_blank" class="Label a-outline" id="viewJS"><img src="assets/icon/visibility.svg" alt="">Visualizar</a></button>
                 </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/JavaScript.png" alt="">
-                    <p class="p_about">Javascript</p>
-                </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/WordPress.png" alt="">
-                    <p class="p_about">Wordpress</p>
-                </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/TypeScript.png" alt="">
-                    <p class="p_about">TypeScript</p>
-                </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/AngularJS.png" alt="">
-                    <p class="p_about">AngularJS</p>
-                </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/Python.png" alt="">
-                    <p class="p_about">Python</p>
-                </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/Flutter.png" alt="">
-                    <p class="p_about">Flutter</p>
-                </div>
-                <div class="skills"><img class="imgs img_habilidades" src="assets/icon/Figma.png" alt="">
-                    <p class="p_about">Figma</p>
-                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <div>
+                <h2 class="H2-Semibold" id="partProjects">Projetos</h2>
+                <p class="Label" id="subProjects">Conheça como eu aplico meus conhecimentos</p>
+            </div>
+            <div class="div-projetos">
+                <article class="container-projetos">
+                    <div class="info-projeto">
+                        <h3 class="H4-Semibold">Em breve</h3>
+                        <p class="PF-Regular">Site para o uso e aplicar conhecimentos para projetos reais.</p>
+                        <div class="div-btn">
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/visibility.svg" alt="">Visualizar</a></button>
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/github.svg" alt="">Código</a></button>
+                        </div>
+                        <h4 class="PF-Medium">Tecnologias aplicadas:</h4>
+                        <div class="div-btn">
+                            <button><a href="#html" class="Label"><img src="assets/icon/html.svg" alt=""></a></button>
+                            <button><a href="#css" class="Label"><img src="assets/icon/css.svg" alt=""></a></button>
+                            <button><a href="#js" class="Label"><img src="assets/icon/js.svg" alt=""></a></button>
+                            <button><a href="#figma" class="Label"><img src="assets/icon/figma.svg" alt=""></a></button>
+                            <button><a href="#scrum" class="Label"><img src="assets/icon/scrum.svg" alt=""></a></button>
+                        </div>
+                    </div>
+                    <div class="info-projeto">
+                        <h3 class="H4-Semibold">Em breve</h3>
+                        <p class="PF-Regular">Site para o uso e aplicar conhecimentos para projetos reais.</p>
+                        <div class="div-btn">
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/visibility.svg" alt="">Visualizar</a></button>
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/github.svg" alt="">Código</a></button>
+                        </div>
+                        <h4 class="PF-Medium">Tecnologias aplicadas:</h4>
+                        <div class="div-btn">
+                            <button><a href="#html" class="Label"><img src="assets/icon/html.svg" alt=""></a></button>
+                            <button><a href="#css" class="Label"><img src="assets/icon/css.svg" alt=""></a></button>
+                            <button><a href="#js" class="Label"><img src="assets/icon/js.svg" alt=""></a></button>
+                            <button><a href="#figma" class="Label"><img src="assets/icon/figma.svg" alt=""></a></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="container-projetos">
+                    <div class="info-projeto">
+                        <h3 class="H4-Semibold">Em breve</h3>
+                        <p class="PF-Regular">Site para o uso e aplicar conhecimentos para projetos reais.</p>
+                        <div class="div-btn">
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/visibility.svg" alt="">Visualizar</a></button>
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/github.svg" alt="">Código</a></button>
+                        </div>
+                        <h4 class="PF-Medium">Tecnologias aplicadas:</h4>
+                        <div class="div-btn">
+                            <button><a href="#html" class="Label"><img src="assets/icon/html.svg" alt=""></a></button>
+                            <button><a href="#css" class="Label"><img src="assets/icon/css.svg" alt=""></a></button>
+                            <button><a href="#js" class="Label"><img src="assets/icon/js.svg" alt=""></a></button>
+                            <button><a href="#figma" class="Label"><img src="assets/icon/figma.svg" alt=""></a></button>
+                            <button><a href="#scrum" class="Label"><img src="assets/icon/scrum.svg" alt=""></a></button>
+                        </div>
+                    </div>
+                    <div class="info-projeto">
+                        <h3 class="H4-Semibold">Em breve</h3>
+                        <p class="PF-Regular">Site para o uso e aplicar conhecimentos para projetos reais.</p>
+                        <div class="div-btn">
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/download.svg" alt="">Baixar APK</a></button>
+                            <button class="button-outline"><a href="" class="Label a-outline"><img src="assets/icon/github.svg" alt="">Código</a></button>
+                        </div>
+                        <h4 class="PF-Medium">Tecnologias aplicadas:</h4>
+                        <div class="div-btn">
+                            <button><a href="#flutter" class="Label"><img src="assets/icon/flutter.svg" alt=""></a></button>
+                            <button><a href="#dart" class="Label"><img src="assets/icon/dart.svg" alt=""></a></button>
+                            <button><a href="#figma" class="Label"><img src="assets/icon/figma.svg" alt=""></a></button>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <h4 class="title_footer" id="contact-title">Quer conhecer mais? Entre em contato!</h4>
-        <a href="mailto:joaoh.genesio@gamil.com"><button class="btn_footer" id="contact-button">Contato</button></a>
+    <footer>
+        <h4 class="PF-Semibold" id="partFooter">Quer conhecer mais? Entre em contato!</h4>
+        <div class="div-btn">
+            <button><a href="https://www.linkedin.com/in/joaogenesio/" target="_blank" class="Label"><img src="assets/icon/linkedin.svg" alt="">LinkedIn</a></button>
+            <button><a href="mailto:joaoh.genesio@gamil.com" class="Label"  id="contact"><img src="assets/icon/email.svg" alt="">Contato</a></button>
+        </div>
     </footer>
+    <button id="back-to-top" title="Voltar ao topo"><img src="assets/icon/arrowup.svg" alt=""></button>
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("back-to-top").style.display = "flex";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        });
+    </script>
 </body>
 </html>

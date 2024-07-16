@@ -1,0 +1,8 @@
+html {
+    cursor: url('../../assets/cursor/cursor.png'), auto;
+}
+
+button,
+a {
+    cursor: url('../../assets/cursor/pointer.png'), pointer !important;
+}

@@ -1,0 +1,73 @@
+div.txt-animation span {
+    position: relative;
+}
+
+div.txt-animation span::before {
+    content: "";
+    color: var(--txt-color);
+    animation: palavras 12s infinite;
+}
+
+div.txt-animation span::after {
+    content: "";
+    position: absolute;
+    height: 94%;
+    border-left: var(--border-size) solid var(--border-color);
+    top: 2px;
+    right: -10px;
+    animation: cursor .5s infinite, digita 20s steps(20) infinite;
+    width: calc(100% + 10px);
+    background-color: var(--background-primary);
+}
+
+@keyframes digita {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 10px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid var(--border-color);
+    }
+}
+
+@keyframes palavras {
+
+    0%,
+    33% {
+        content: "Web Developer";
+    }
+
+    34%,
+    67% {
+        content: "Designer UX/UI";
+    }
+
+    68%,
+    100% {
+        content: "App Developer";
+    }
+}

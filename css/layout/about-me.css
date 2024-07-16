@@ -1,0 +1,31 @@
+#about-me {
+    display: flex;
+    align-items: stretch;
+    border-bottom: var(--border-size) solid var(--border-color);
+}
+
+.container-about-me {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    width: 50%;
+    padding: var(--spacing-5xl) var(--spacing-lg);
+    text-align: center;
+}
+
+.container-about-me:nth-child(2) {
+    border-left: var(--border-size) solid var(--border-color);
+}
+
+.list-skill {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.div-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
