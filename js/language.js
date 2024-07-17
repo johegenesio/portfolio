@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageText = document.getElementById('language-text');
     const currentLanguage = localStorage.getItem('language') || 'PT-BR';
 
-    updateTexts(currentLanguage);
-
     languageToggleButton.addEventListener('click', () => {
         let currentLanguage = languageText.textContent;
         const newLanguage = currentLanguage === 'PT-BR' ? 'EN-US' : currentLanguage === 'EN-US' ? 'ES-LA' : 'PT-BR';
@@ -12,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('language', newLanguage);
         updateTexts(newLanguage);
     });
+
+    updateTexts(currentLanguage);
 });
 
 function updateTexts(language) {
