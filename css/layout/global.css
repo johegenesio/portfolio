@@ -1,8 +1,4 @@
 html {
-    padding: 16px;
-    background-color: var(--bg-color);
-    transition: all .3s ease-in-out;
-    scroll-behavior: smooth;
     cursor: url('../../assets/icon/cursor.png'), auto;
 }
 

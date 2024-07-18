@@ -1,7 +1,0 @@
-body {
-    border: var(--border-size) solid var(--border-color);
-    border-radius: var(--radius-md);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
-    max-width: 1280px;
-    margin: auto;
-}

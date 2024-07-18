@@ -20,12 +20,9 @@
 @import url('module/top-site.css');
 
 @import url('responsive/html.css');
-@import url('responsive/body.css');
-@import url('responsive/header.css');
 @import url('responsive/nav.css');
 @import url('responsive/about-me.css');
 @import url('responsive/presentation.css');
 @import url('responsive/premios.css');
 @import url('responsive/projetos.css');
 @import url('responsive/footer.css');
-@import url('responsive/title-description.css');

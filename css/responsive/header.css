@@ -1,8 +1,0 @@
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: var(--border-size) solid var(--border-color);
-    height: 80px;
-    padding: var(--spacing-none) var(--spacing-lg);
-}

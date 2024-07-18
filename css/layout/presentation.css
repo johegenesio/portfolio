@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--spacing-4xl);
+    gap: var(--spacing-lg);
     padding: var(--spacing-5xl) var(--spacing-lg);
     border-bottom: var(--border-size) solid var(--border-color);
 }
