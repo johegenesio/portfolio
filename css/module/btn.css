@@ -9,6 +9,15 @@ button:hover {
     background-color: var(--background-button-active);
 }
 
+button.noSelect:hover {
+    background-color: var(--background-button-default);
+    cursor: url('../../assets/cursor/cursor.png'), default;
+}
+
+button.noSelect>a:hover {
+    cursor: url('../../assets/cursor/cursor.png'), default;
+}
+
 a {
     display: flex;
     align-items: center;

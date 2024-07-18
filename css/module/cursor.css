@@ -4,5 +4,5 @@ html {
 
 button,
 a {
-    cursor: url('../../assets/cursor/pointer.png'), pointer !important;
+    cursor: url('../../assets/cursor/pointer.png'), pointer;
 }
