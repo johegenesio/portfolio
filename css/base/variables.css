@@ -21,8 +21,10 @@
 
     --background-button-outline: var(--white);
     --background-button-outline-active: var(--grey);
+    
     --text-color-button-outline: var(--black);
     --text-color-button-outline-active: var(--black);
+
     --border-color-button-outline: var(--black);
     --border-size-button-outline: var(--border-size);
 
