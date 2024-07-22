@@ -32,7 +32,7 @@ function updateTexts(language) {
             'colocationHP': 'Colocação: 1°Lugar',
             'challengeHP': 'Desafio: Mensurar a economia de carbono proporcionada pelo trabalho híbrido',
             'ideaHP': 'Ideia: HP Green',
-            'viewHP': '<img src="assets/icon/visibility.svg" alt="">To visualizar',
+            'viewHP': '<img src="assets/icon/visibility.svg" alt="">Visualizar',
             'colocationJS': 'Colocação: 2°Lugar',
             'challengeJS': 'Desafio: Inteligência Artificial na Mobilidade, liderado pela empresa SCANIA',
             'ideaJS': 'Ideia: Projeto STK',
