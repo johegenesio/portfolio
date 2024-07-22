@@ -1,11 +1,15 @@
+@media (max-width: 968px) {
+    .img-project {
+        max-width: 480px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 800px) {
     .container-projetos {
         flex-direction: column;
     }
     .info-projeto {
-        width: 100%;
-    }
-    .img-project {
         width: 100%;
     }
 }

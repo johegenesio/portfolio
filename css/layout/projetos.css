@@ -31,6 +31,4 @@
 .img-project {
     border-radius: var(--radius-md);
     border: var(--border-size) solid var(--border-color);
-    max-width: 480px;
-    width: 100%;
 }
