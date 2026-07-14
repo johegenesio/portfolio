@@ -11,5 +11,5 @@ Este é o meu portfólio pessoal, desenvolvido em HTML, CSS e JavaScript. Ele ap
 [![Behance](https://img.shields.io/badge/Behance-0054F7?logo=behance&logoColor=white)](https://www.behance.net/johegenesio)
 
 <div>
-  <img width="100%" height="100" alt="Image" src="https://github.com/user-attachments/assets/1ab62063-712b-4536-b202-9ae08c52c81e" />
+  <img width="100%" height="100" alt="Image" src="https://github.com/user-attachments/assets/61c6a8f9-4ca2-488e-aa7d-9dc8b52a8c86" />
 </div>
