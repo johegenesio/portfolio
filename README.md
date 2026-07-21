@@ -7,7 +7,7 @@ Este é o meu portfólio pessoal, desenvolvido em HTML, CSS e JavaScript. Ele ap
 - Aprendizado
 - Engajar
 
-[![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/joao-genesio)
+[![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/joaogenesio/)
 [![Behance](https://img.shields.io/badge/Behance-0054F7?logo=behance&logoColor=white)](https://www.behance.net/johegenesio)
 
 <div>
